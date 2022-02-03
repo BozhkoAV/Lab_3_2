@@ -5,7 +5,7 @@
     <item
         android:id="@+id/open_drawer_layout"
         android:title="About"
-        android:icon="@drawable/ic_menu"
+        android:menuCategory="secondary"
         app:showAsAction="ifRoom"
         />
 
