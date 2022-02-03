@@ -30,8 +30,9 @@ class ThirdActivity : AppCompatActivity() {
         }
 
         binding.button8.setOnClickListener {
+            drawerLayout.close()
             val i = Intent(this, AboutActivity::class.java)
-            startActivityForResult(i, 1)
+            startActivity(i)
         }
 
         setContentView(binding.root)
@@ -44,10 +45,5 @@ class ThirdActivity : AppCompatActivity() {
         } else {
             return super.onOptionsItemSelected(item)
         }
-    }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == 1 && resultCode == 1) drawerLayout.close()
     }
 }

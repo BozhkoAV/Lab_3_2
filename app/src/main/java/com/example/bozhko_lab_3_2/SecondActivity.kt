@@ -29,8 +29,9 @@ class SecondActivity : AppCompatActivity() {
         }
 
         binding.button7.setOnClickListener {
+            drawerLayout.close()
             val i = Intent(this, AboutActivity::class.java)
-            startActivityForResult(i, 1)
+            startActivity(i)
         }
 
         setContentView(binding.root)
@@ -48,6 +49,5 @@ class SecondActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == 0 && resultCode == 1) finish()
-        if (requestCode == 1 && resultCode == 1) drawerLayout.close()
     }
 }
