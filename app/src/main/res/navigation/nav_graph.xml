@@ -3,22 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/nav_firstActivity">
+    app:startDestination="@id/nav_first">
 
     <activity
-        android:id="@+id/nav_firstActivity"
+        android:id="@+id/nav_first"
         android:name="com.example.bozhko_lab_3_2.FirstActivity"
         android:label="first_activity"
         tools:layout="@layout/first_activity" />
 
     <activity
-        android:id="@+id/nav_secondActivity"
+        android:id="@+id/nav_second"
         android:name="com.example.bozhko_lab_3_2.SecondActivity"
         android:label="second_activity"
         tools:layout="@layout/second_activity" />
 
     <activity
-        android:id="@+id/nav_thirdActivity"
+        android:id="@+id/nav_third"
         android:name="com.example.bozhko_lab_3_2.ThirdActivity"
         android:label="third_activity"
         tools:layout="@layout/third_activity" />
